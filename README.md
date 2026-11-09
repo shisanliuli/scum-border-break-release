@@ -9,6 +9,18 @@
 
 ---
 
+## SCUM 启动器 · 首个公开测试版
+
+[下载启动器社区发行包（Windows x64）](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.2.0-test.1)
+
+**这是启动器的第一个测试版，很多功能尚未完善或开放，建议目前仅用于启动已经安装 MOD 的游戏。**
+
+请完整解压发行包，运行 `SCUMDevLauncher.exe`，在“设置”中选择 SCUM 游戏目录并保存，再启动游戏。不要只复制一个 EXE。
+
+模组下载与在线分发暂未开放，其他模组管理功能仍处于测试阶段。发行包自带运行环境，不含个人账号和模组本体。
+
+---
+
 ## 它能做什么
 
 | | 原版 SCUM | 装完这个 mod |

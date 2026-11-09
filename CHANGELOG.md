@@ -1,5 +1,12 @@
 # 更新记录
 
+## 启动器 v0.2.0 · 首个公开测试版（2026-11-09）
+
+- 新增 [SCUM 启动器社区发行包](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.2.0-test.1)，供 Windows x64 玩家测试。
+- 这是启动器的第一个测试版，很多功能尚未完善或开放，**建议目前仅用于启动已经安装 MOD 的游戏**。
+- 模组下载与在线分发暂未开放，其他模组管理功能仍处于测试阶段。
+- 完整解压后运行 `SCUMDevLauncher.exe`，在设置中选择 SCUM 游戏目录并保存。
+
 ## v1.0.0
 
 首个公开版本。
