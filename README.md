@@ -9,15 +9,25 @@
 
 ---
 
-## SCUM 启动器 · 首个公开测试版
+## SCUM 启动器 v0.3.0 · 公开测试版
 
-[下载启动器社区发行包（Windows x64）](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.2.0-test.1)
+[下载启动器社区发行包（Windows x64）](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.3.0-test.1)
 
-**这是启动器的第一个测试版，很多功能尚未完善或开放，建议目前仅用于启动已经安装 MOD 的游戏。**
+**启动器仍处于公开测试阶段，很多功能尚未完善或开放，建议目前仅用于启动已经安装 MOD 的游戏。** 本版是在首个测试版基础上的更新。
+
+0.3.0 新增：
+
+- **拖入安装**：把本地 PAK、ZIP、7Z、RAR 拖到启动器窗口，或点击“导入模组 / 压缩包”多选文件，即可自动识别、解压、检查并安装 PAK。请先关闭游戏并设置正确游戏目录。
+- **五种语言**：简体中文、繁体中文、英文、日文、韩文。在“设置 → 语言 / Language”选择后立即生效，并记住选择。
+- **本地管理**：已管理的模组可校验、启用、禁用、恢复上一版和卸载；同名手动文件会先询问是否备份，卸载时恢复原件。相关功能仍需玩家测试。
 
 请完整解压发行包，运行 `SCUMDevLauncher.exe`，在“设置”中选择 SCUM 游戏目录并保存，再启动游戏。不要只复制一个 EXE。
 
-模组下载与在线分发暂未开放，其他模组管理功能仍处于测试阶段。发行包自带运行环境，不含个人账号和模组本体。
+**在线模组下载与分发尚未开放。** 拖入功能安装的是玩家已经下载到本地的文件；暂不支持加密/分卷压缩包、嵌套压缩包、文件夹、网页链接、DLL、UE4SS、UTOC/UCAS 等格式。模组作者内容及文件路径保留原文。
+
+发行包自带运行环境，不含个人账号和模组本体。真实游戏、服务器及更多 Windows/DPI 环境的兼容性仍需后续验证。
+
+[更新说明与文件校验](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.3.0-test.1) · [上一测试版 v0.2.0](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.2.0-test.1)
 
 ---
 
