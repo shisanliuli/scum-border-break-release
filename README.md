@@ -64,25 +64,24 @@ Get-FileHash .\pak\pakchunk962-NoWall_P.pak -Algorithm SHA256
 
 ---
 
-## SCUM 启动器 v0.3.0 · 公开测试版
+## SCUM 启动器 v0.4.0 · UE4SS DLL 安装测试版
 
-[下载启动器社区发行包（Windows x64）](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.3.0-test.1)
+[下载启动器社区发行包（Windows x64）](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.4.0-test.1)
 
-**启动器仍处于公开测试阶段，很多功能尚未完善或开放，建议目前仅用于启动已经安装 MOD 的游戏。** 本版是在首个测试版基础上的更新。
+**启动器仍处于公开测试阶段，很多功能尚未完善或开放，建议目前仅用于启动已经安装 MOD 的游戏。**
 
-0.3.0 新增：
+- **UE4SS DLL 拖入安装**：支持 Windows x64 UE4SS C++ 模组；命名 DLL 自动安装为 `Mods/模组名/dlls/main.dll`。单独 `main.dll` 可从目录识别名称或弹窗输入。带资源/依赖的模组建议保留完整目录结构，以 ZIP/7Z/RAR 导入。
+- **已有 UE4SS 检测与离线包**：支持 Win64 根目录和 `ue4ss` 子目录；缺少时提示导入与游戏兼容的完整离线包，不自动联网下载 UE4SS，不附送加载器或示例模组。
+- **PAK 和 DLL 本地管理**：支持校验、启用、禁用、更新、上一版回滚和卸载。手动同名文件需确认后备份接管；DLL、PAK、离线环境同批提交并支持中断恢复。
+- **五种语言**：简体中文、繁体中文、English、日本語、한국어，在设置页即时切换并保存。
 
-- **拖入安装**：把本地 PAK、ZIP、7Z、RAR 拖到启动器窗口，或点击“导入模组 / 压缩包”多选文件，即可自动识别、解压、检查并安装 PAK。请先关闭游戏并设置正确游戏目录。
-- **五种语言**：简体中文、繁体中文、英文、日文、韩文。在“设置 → 语言 / Language”选择后立即生效，并记住选择。
-- **本地管理**：已管理的模组可校验、启用、禁用、恢复上一版和卸载；同名手动文件会先询问是否备份，卸载时恢复原件。相关功能仍需玩家测试。
+请完整解压后运行 `SCUMDevLauncher.exe`，在“设置”选择并保存游戏根目录。导入前关闭游戏。发行包自带 .NET 10 Windows x64 运行环境，不含个人账号、私人配置或模组本体。
 
-请完整解压发行包，运行 `SCUMDevLauncher.exe`，在“设置”中选择 SCUM 游戏目录并保存，再启动游戏。不要只复制一个 EXE。
+**在线模组下载与分发尚未开放。** 本版拖入安装使用玩家已有的本地文件；不支持自定义 UE4SS 路径、独立 Lua 模组、加密/分卷/嵌套压缩包、文件夹、网页链接、UTOC/UCAS 或自动执行安装脚本。DLL 导出/导入检查不保证真实游戏、UE4SS ABI 或所有模组依赖兼容；请使用可信作者与匹配版本。
 
-**在线模组下载与分发尚未开放。** 拖入功能安装的是玩家已经下载到本地的文件；暂不支持加密/分卷压缩包、嵌套压缩包、文件夹、网页链接、DLL、UE4SS、UTOC/UCAS 等格式。模组作者内容及文件路径保留原文。
+核心回归 95 项、DLL 五语界面 28 项、原有多语言界面 67 项、实际发行 EXE 五语检查 30 项和全新启动 8 项通过。测试使用隔离假游戏；真实游戏内加载与服务器兼容性仍需进一步测试。请使用 0.4.0 管理本版 DLL 安装记录。
 
-发行包自带运行环境，不含个人账号和模组本体。真实游戏、服务器及更多 Windows/DPI 环境的兼容性仍需后续验证。
-
-[更新说明与文件校验](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.3.0-test.1) · [上一测试版 v0.2.0](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.2.0-test.1)
+[更新说明与 SHA256](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.4.0-test.1) · [上一测试版 v0.3.0](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.3.0-test.1)
 
 ---
 
