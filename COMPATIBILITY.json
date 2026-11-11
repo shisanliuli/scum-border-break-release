@@ -1,0 +1,58 @@
+{
+  "mod_version": "1.1.0",
+  "game_version": "1.3.6",
+  "game_changelist": 177121,
+  "steam_buildid": "26593778",
+  "source_assets": [
+    {
+      "kind": "map",
+      "path": "SCUM/Content/ConZ_Files/Maps/The_Island/The_Island",
+      "sha256": {
+        ".umap": "7d1766b9a570b092b450eb9dc1e71100fc1557b2195a7200d25272d997dac74a",
+        ".uexp": "67a7020369f8ce3e56f061712ee65c5052eae4f68732db121986bc7483d5c494"
+      }
+    },
+    {
+      "kind": "common",
+      "path": "SCUM/Content/ConZ_Files/Characters/Prisoner/Data/CommonData/BP_PrisonerCommonData",
+      "sha256": {
+        ".uasset": "aaf7e76adc4f94bab179c9dc929e55fc8b6650816a4f0820129e919f46c86acb",
+        ".uexp": "0158f646b65b286a3604e17aa6368515ea7654fd7676cd868c641d2d14968ea3"
+      }
+    }
+  ],
+  "packages": [
+    {
+      "name": "pakchunk962-NoWall_P.pak",
+      "bytes": 10096939,
+      "sha256": "81e1d3bd3edb50fda1ddb43864dbc438df52ff14473dd182ff4a18afd2783114",
+      "round_trip_verified": true
+    },
+    {
+      "name": "pakchunk966-OOBInterval_P.pak",
+      "bytes": 111373,
+      "sha256": "08cd7183913fb5b0ee37153dc38a14b86f02766558db4daf94df33acb92ef58b",
+      "round_trip_verified": true
+    }
+  ],
+  "obsolete_main_map_packages": [
+    "pakchunk963-NoWallFix_P.pak"
+  ],
+  "validation": {
+    "offline_build": "passed",
+    "real_asset_regressions": 6,
+    "package_round_trip": "passed",
+    "game_save_load": "passed_log_and_user_confirmed",
+    "border_wall_visual_and_collision": "passed_user_confirmed",
+    "out_of_bounds_survival_and_relogin": "pending"
+  },
+  "validation_scope": {
+    "save_load": "New SCUM 1.3.6 session loaded rebuilt map and possessed player; no original serialization crash observed.",
+    "border_wall": "User confirmed wall disappeared and could be crossed at the tested location. North/east sides and all segments were not individually identified.",
+    "pending": [
+      "Long-duration out-of-bounds survival",
+      "Logging out and re-entering outside the boundary"
+    ]
+  },
+  "version_check": "Match exact BuildID and source fingerprints. This file alone does not block Steam updates or prevent the game loading an incompatible mod."
+}
