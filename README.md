@@ -64,24 +64,27 @@ Get-FileHash .\pak\pakchunk962-NoWall_P.pak -Algorithm SHA256
 
 ---
 
-## SCUM 启动器 v0.4.0 · UE4SS DLL 安装测试版
+## SCUM 界跃（SCUM Rift）v0.5.0 · 社区测试版
 
-[下载启动器社区发行包（Windows x64）](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.4.0-test.1)
+<img src="docs/launcher/assets/rift-icon.png" alt="SCUM Rift 图标" width="72" />
 
-**启动器仍处于公开测试阶段，很多功能尚未完善或开放，建议目前仅用于启动已经安装 MOD 的游戏。**
+[下载 Windows x64 社区发行包](https://github.com/shisanliuli/scum-border-break-release/releases/download/launcher-v0.5.0-test.1/SCUMRift-0.5.0-win-x64-test.zip) · [发布说明与校验](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.5.0-test.1) · [使用说明](docs/launcher/使用说明.md)
 
-- **UE4SS DLL 拖入安装**：支持 Windows x64 UE4SS C++ 模组；命名 DLL 自动安装为 `Mods/模组名/dlls/main.dll`。单独 `main.dll` 可从目录识别名称或弹窗输入。带资源/依赖的模组建议保留完整目录结构，以 ZIP/7Z/RAR 导入。
-- **已有 UE4SS 检测与离线包**：支持 Win64 根目录和 `ue4ss` 子目录；缺少时提示导入与游戏兼容的完整离线包，不自动联网下载 UE4SS，不附送加载器或示例模组。
-- **PAK 和 DLL 本地管理**：支持校验、启用、禁用、更新、上一版回滚和卸载。手动同名文件需确认后备份接管；DLL、PAK、离线环境同批提交并支持中断恢复。
-- **五种语言**：简体中文、繁体中文、English、日本語、한국어，在设置页即时切换并保存。
+**启动器仍处于公开测试阶段，很多功能尚未完善或开放，建议目前主要用于启动已经安装 MOD 的游戏。**
 
-请完整解压后运行 `SCUMDevLauncher.exe`，在“设置”选择并保存游戏根目录。导入前关闭游戏。发行包自带 .NET 10 Windows x64 运行环境，不含个人账号、私人配置或模组本体。
+- **MOD / 纯净模式一键切换**：把标准位置的 PAK、LogicMods 和 UE4SS 环境移至游戏根目录的 `.SCUMRift-cache`，无需卸载或重新下载。恢复时保留配置与原启用状态；恢复目标出现新文件时会停止，保留两边内容。
+- **Steam 启动顺序优化**：检查有效客户端、登录和会话稳定后再启动游戏，等待与模组校验同时进行；等待可取消，超时会停止本次启动。
+- **新名称与图标**：SCUM 界跃 / SCUM Rift；桌面图标为紫灰底，窗口左上角直接绘制无背景矢量标志，随主题显示。
+- **保留拖入与本地管理**：支持 PAK、UE4SS C++ DLL、ZIP、7Z、RAR；缺少 UE4SS 时支持导入自备兼容离线包。已管理模组可校验、启停、更新、回滚及卸载。
+- **五种语言**：简体中文、繁体中文、English、日本語、한국어，在设置中切换并保存。
 
-**在线模组下载与分发尚未开放。** 本版拖入安装使用玩家已有的本地文件；不支持自定义 UE4SS 路径、独立 Lua 模组、加密/分卷/嵌套压缩包、文件夹、网页链接、UTOC/UCAS 或自动执行安装脚本。DLL 导出/导入检查不保证真实游戏、UE4SS ABI 或所有模组依赖兼容；请使用可信作者与匹配版本。
+完整解压后运行 `SCUMDevLauncher.exe`，在“设置”中选择并保存游戏根目录。游戏关闭后再安装或切换模式；发行包自带 .NET 10 Windows x64 运行环境，不含个人账号、私人配置和模组本体。
 
-核心回归 95 项、DLL 五语界面 28 项、原有多语言界面 67 项、实际发行 EXE 五语检查 30 项和全新启动 8 项通过。测试使用隔离假游戏；真实游戏内加载与服务器兼容性仍需进一步测试。请使用 0.4.0 管理本版 DLL 安装记录。
+**纯净切换覆盖文档列出的标准模组位置，不能还原被其他工具替换的官方游戏资源。** 请保留缓存区及管理记录，不要手动删除。**降级到 0.4.0 或更早版本、搬动游戏目录前，先使用 0.5.0 恢复 MOD 模式。**
 
-[更新说明与 SHA256](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.4.0-test.1) · [上一测试版 v0.3.0](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.3.0-test.1)
+**在线模组下载与分发尚未开放。** 拖入安装使用玩家已有的本地文件，UE4SS 不自动联网下载。自定义加载路径及未支持的模组布局需自行处理；真实 Steam 冷启动、游戏加载、服务器及更多系统环境的兼容性仍需实际游玩验证。
+
+[更新记录](docs/launcher/更新记录.md) · [验收范围](docs/launcher/VALIDATION.md) · [上一测试版 v0.4.0](https://github.com/shisanliuli/scum-border-break-release/releases/tag/launcher-v0.4.0-test.1)
 
 ---
 

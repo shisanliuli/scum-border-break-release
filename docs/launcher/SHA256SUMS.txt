@@ -1,0 +1,1 @@
+5fd2a48c475bdc7e5913fd8c66522e9ea8e7781761e21ad403380a40c2eb5d5f  SCUMRift-0.5.0-win-x64-test.zip
